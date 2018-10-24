@@ -15,6 +15,7 @@ import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 
 import com.genericfunctions.GenericMethods;
+import com.readexcel.ReadExcel;
 
 public class Listneners implements ITestListener,IInvokedMethodListener{
 
@@ -53,7 +54,7 @@ public class Listneners implements ITestListener,IInvokedMethodListener{
 	@Override
 	public void onStart(ITestContext context) {
 		GenericMethods.loadPropertiesFile();
-		
+		ReadExcel.loadExcelFile();
 	}
 
 	@Override
