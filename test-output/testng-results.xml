@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="1015" started-at="2018-10-24T02:39:10Z" finished-at="2018-10-24T02:39:11Z">
+  <suite name="Suite" duration-ms="5751" started-at="2018-10-25T02:23:14Z" finished-at="2018-10-25T02:23:19Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="1015" started-at="2018-10-24T02:39:10Z" finished-at="2018-10-24T02:39:11Z">
+    <test name="Test" duration-ms="5751" started-at="2018-10-25T02:23:14Z" finished-at="2018-10-25T02:23:19Z">
       <class name="com.postscripts.Tc_01_CreateJiraIssue">
-        <test-method status="PASS" signature="createIssue()[pri:0, instance:com.postscripts.Tc_01_CreateJiraIssue@2d928643]" name="createIssue" duration-ms="62" started-at="2018-10-24T02:39:11Z" finished-at="2018-10-24T02:39:11Z">
+        <test-method status="PASS" signature="createIssue()[pri:0, instance:com.postscripts.Tc_01_CreateJiraIssue@2d928643]" name="createIssue" duration-ms="108" started-at="2018-10-25T02:23:19Z" finished-at="2018-10-25T02:23:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createIssue -->

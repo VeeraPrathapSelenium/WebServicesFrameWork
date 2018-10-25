@@ -8,13 +8,13 @@ import com.readexcel.ReadExcel;
 
 
 
-public class Tc_01_CreateJiraIssue  extends GenericMethods{
+public class Tc_01_GetStatus_Timeline  extends GenericMethods{
 	
 	
 	@Test
 	public static void createIssue()
 	{
-		ReadExcel.loadExcelFile();
+		String parameter=getData("Get","Parameters");
 	}
 	
 

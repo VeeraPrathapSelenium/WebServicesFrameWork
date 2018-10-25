@@ -6,9 +6,11 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import com.readexcel.ReadExcel;
+
 import io.restassured.path.json.JsonPath;
 
-public class GenericMethods {
+public class GenericMethods extends ReadExcel{
 //===================================================Variables Declaration==============================================================================
 	
 public static Properties property ;  

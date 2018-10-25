@@ -122,8 +122,91 @@ public class ReadExcel {
 		
 	}
 	
-	
+	public static int searchColumnHeader(String sheetname,String columnname)
+	{
+		int colfound=0;
+		try
+		{
+			int colcount=getColumnCount(sheetname);
+			
+			
+			for(int i=0;i<=colcount;i++)
+			{
+				
+				XSSFSheet sheet=workbook.getSheet(sheetname);
+				
+				String crntcol_Name=sheet.getRow(0).getCell(i).getStringCellValue();
+				if(crntcol_Name.equals(columnname))
+				{
+					colfound=i;
+					break;
+					
+				}
+				
+				
+				
+				
+				
+			}
+			
+			
+			
+		}catch(Exception e)
+		{
+			System.out.println("Unable to search the column name "+e.getMessage());
+		}
+		return colfound;
+		
+		
+		
+		
+		
+	}
 	
 
+	
+	public static String getData(String sheetname,String columnname)
+	{
+		String data	="";
+		try
+		{
+			XSSFSheet sheet= workbook.getSheet(sheetname);
+			int rowpos=searchTestcase(sheetname);
+			
+			int colpos=searchColumnHeader(sheetname,columnname);
+		
+			
+			if(!(rowpos==0 && colpos==0))
+			{
+			
+			switch (sheet.getRow(rowpos).getCell(colpos).getCellTypeEnum()) {
+			case STRING:
+				data=sheet.getRow(rowpos).getCell(colpos).getStringCellValue();
+				
+				break;
+				
+			case NUMERIC:
+				int numdata=(int) sheet.getRow(rowpos).getCell(colpos).getNumericCellValue();
+				
+				data=Integer.toString(numdata);
+				
+				break;
+
+			default:
+				break;
+			}
+			
+			
+			
+			}	
+			
+		}catch(Exception e)
+		{
+			System.out.println(e.getMessage());
+		}
+		return data;
+		
+		
+	}
 	
 }

@@ -13,7 +13,7 @@
 
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.postscripts.Tc_01_CreateJiraIssue"/>
+      <class name="com.postscripts.Tc_01_GetStatus_Timeline"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
